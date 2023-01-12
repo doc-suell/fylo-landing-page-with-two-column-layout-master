@@ -1,0 +1,280 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  line-height: 1;
+  box-sizing: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Fonts
+-------------------------*/
+@font-face {
+  font-family: "Raleway-rigular";
+  src: url(/assets/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url(/assets/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/fonts/OpenSans-Regular.ttf);
+}
+/* Mobile fonts size
+-------------------------*/
+/* Flex Box
+-------------------------*/
+/* Center Block
+-------------------------*/
+/* Circle  
+-------------------------*/
+/* Text  
+-------------------------*/
+/* BreakPoints  
+-------------------------*/
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.curv-bg {
+  margin-bottom: -10px;
+}
+.curv-bg img {
+  width: 100%;
+}
+
+main {
+  position: relative;
+  font-family: "OpenSans";
+  background-color: hsl(240deg, 75%, 98%);
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+}
+main .main-left h2 {
+  font-size: 35px;
+  font-family: "Raleway-bold";
+  padding: 0 0 20px 0;
+}
+main .main-left .description > p {
+  padding-top: 10px;
+  line-height: 22px;
+  font-size: 13px;
+  font-weight: 500;
+}
+main .main-left .description > p:nth-child(2) {
+  padding: 10px 0 10px 0;
+}
+main .main-left .link-flow {
+  cursor: pointer;
+  position: relative;
+  color: hsl(170deg, 45%, 43%);
+  font-size: 14px;
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  width: 150px;
+  padding-bottom: 5px;
+}
+main .main-left .link-flow::after {
+  content: url(../../../images/icon-arrow.svg);
+  margin-left: 3px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+main .main-left .link-flow:hover {
+  color: hsl(170deg, 53%, 59%);
+}
+main .main-left .card {
+  width: 340px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.2);
+}
+main .main-left .card p {
+  position: relative;
+  padding: 40px 0 0 0;
+  width: 75%;
+  margin: auto;
+  font-size: 12px;
+  line-height: 22px;
+}
+main .main-left .card p::before {
+  content: url(../../../images/icon-quotes.svg);
+  position: absolute;
+  top: 16px;
+}
+main .main-left .card .avatar-img {
+  margin: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .main-left .card .avatar-img img {
+  width: 100%;
+}
+main .main-left .card .avatar-element {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+main .main-left .card .name-card {
+  font-family: "Raleway-bold";
+  font-size: 17px;
+}
+main .main-left .card .name-card--job {
+  content: "Founder & CEO, Huddie";
+  top: 22px;
+  right: -15px;
+  width: 111px;
+  font-size: 9px;
+  font-family: "Raleway-rigular";
+}
+main .main-right > img {
+  width: 450px;
+}
+
+header {
+  padding-bottom: 50px;
+}
+header nav {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+header nav ul {
+  font-family: "OpenSans";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: space-around;
+  align-content: stretch;
+}
+header nav ul li {
+  padding: 0px 20px;
+}
+header nav ul li a {
+  color: hsl(238deg, 22%, 44%);
+}
+header .header-section {
+  padding: 60px 100px;
+  color: hsl(243deg, 87%, 12%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+}
+header .header-section .left-side {
+  padding-top: 45px;
+}
+header .header-section .left-side h2 {
+  line-height: 45px;
+  font-size: 35px;
+  font-family: "Raleway-bold";
+}
+header .header-section .left-side p {
+  line-height: 25px;
+  font-family: "OpenSans";
+  padding: 15px 0px;
+  font-size: 13px;
+  font-weight: 500;
+}
+header .header-section .left-side .subcription {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+}
+header .header-section .left-side .subcription input {
+  width: 55%;
+  border: 2px solid hsl(0deg, 0%, 75%);
+  border-radius: 2px;
+  height: 30px;
+  color: hsl(243deg, 87%, 12%);
+  outline: none;
+  padding: 3px 10px;
+}
+header .header-section .left-side .subcription input::-moz-placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+header .header-section .left-side .subcription input:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+header .header-section .left-side .subcription input::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+header .header-section .left-side .subcription button {
+  width: 35%;
+  height: 35px;
+  outline: none;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: -1px -1px 25px -6px rgba(0, 0, 0, 0.5);
+  background-color: hsl(224deg, 93%, 58%);
+  transition: all 0.3s ease;
+}
+header .header-section .left-side .subcription button:hover {
+  background-color: hsl(224deg, 100%, 74%);
+}
+header .header-section .left-side .subcription button a {
+  color: rgb(243, 243, 243);
+}
+header .header-section .right-side > img {
+  width: 600px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,106 @@
+.curv-bg{
+    margin-bottom: -10px;
+img{
+    width: 100%;
+}
+}
+
+main{
+    position: relative;
+    font-family: $OpenSans;
+    background-color:  $Light-Grayish-Blue;
+    padding:  60px 100px;
+    @include flexBox(row,nowrap,space-between,flex-start,stretch);
+    .main-left{
+            h2{
+                font-size: 35px;
+                font-family: $raleway-bold;
+                padding: 0 0 20px 0;
+            }
+            .description>p{
+                padding-top: 10px;
+                line-height: 22px;
+                font-size: 13px;
+                font-weight: 500;
+                &:nth-child(2){
+                    padding: 10px 0 10px 0;
+                }
+            }
+            .link-flow{
+                cursor: pointer;
+                position: relative;
+                color: $Moderate-Cyan;
+                font-size: 14px;
+                border-bottom: 1px solid $Moderate-Cyan;
+                width: 150px;
+                padding-bottom: 5px;
+                &::after{
+                    content: url(../../../images/icon-arrow.svg);
+                    margin-left: 3px;
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                }
+                &:hover{
+                    color: hsl(170, 53%, 59%);
+            }
+            }
+            .card{
+                width: 340px;
+                background-color: white;
+                margin-top: 20px;
+                border-radius: 7px;
+                box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.2);
+                p{
+                    position: relative;
+                    padding: 40px 0 0 0;
+                    // margin: 25px 15px 0px 25px;
+                    width: 75%;
+                    margin: auto;
+                    font-size: 12px;
+                    line-height: 22px;
+                    &::before{
+                        content: url(../../../images/icon-quotes.svg);
+                        position: absolute;
+                        top: 16px;
+
+                    }
+                }
+                .avatar-img{
+                    margin: 25px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .avatar-element{
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    
+                }
+                .name-card{
+                   
+                    font-family: $raleway-bold;
+                    font-size: 17px;
+                }
+                .name-card--job{
+                    content: 'Founder & CEO, Huddie';
+                    top: 22px;
+                    right: -15px;
+                    width: 111px;
+                    font-size: 9px;
+                    font-family: $raleway-rig;
+                }
+            }
+    }
+    .main-right>img{
+        width: 450px;
+    }
+    
+}
+
